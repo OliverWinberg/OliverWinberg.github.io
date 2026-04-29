@@ -34,8 +34,11 @@ Do you have the following prequisite knowledge? If not, you should properly choo
 <summary>Prerequisite knowledge</summary>
 
 - Basic understanding of how APIs communicate (request/response, HTTP methods, payloads)
+
 - Experience with testing APIs
+
 - A development workflow that includes version control and CI/CD
+
 - The ability to run and manage multiple services (e.g., using Docker or similar tools)
 
 </details>
