@@ -89,7 +89,7 @@
                  class="zoomable" />
 
             <div id="overlay" onclick="closeImage()">
-                <img id="overlay-img">
+                <img id="overlay-img" alt="Expanded diagram">
             </div>
 
             <ul>
@@ -111,17 +111,18 @@
 </html>
 
 <script>
-    const overlay = document.getElementById('overlay');
-    const overlayImg = document.getElementById('overlay-img');
+    const overlay = document.getElementById("overlay");
+    const overlayImg = document.getElementById("overlay-img");
 
-    document.querySelectorAll('.zoomable').forEach(img => {
-        img.onclick = () => {
-            overlay.style.display = 'flex';
+    document.querySelectorAll(".zoomable").forEach(img => {
+        img.addEventListener("click", () => {
             overlayImg.src = img.src;
-        };
+            overlay.style.display = "flex";
+        });
     });
 
     function closeImage() {
-        overlay.style.display = 'none';
+        overlay.style.display = "none";
+        overlayImg.src = "";
     }
 </script>
