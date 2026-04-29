@@ -6,16 +6,16 @@ layout: page
 title: Welcome to The Return of the Consumer.
 
 ---
+This page serves the purpose of helping you determine if the method described in "The Return of the Consumer" is relevant and suitable for your organisation. It provides a checklist to assess relevance, criteria for organisational fit, and guidance on when to use or avoid this method.
 
-Do you want to save money for choosing a test strategy that requires subscription?
 
-Do you want to be less dependent on your E2E- and integration tests?
+## Is this method relevant for you?
 
-Are you struggling with contract testing your gateways?
-
-Are you struggling with contract testing against your external provider’s APIs?
-
-Do you want an easy and proven method for implementing Consumer-driven contract testing in an organisation?
+- [ ] You want to reduce dependency on expensive testing tools  
+- [ ] You rely heavily on E2E and integration tests  
+- [ ] You face challenges testing through gateways  
+- [ ] You need to test against external provider APIs  
+- [ ] You lack a clear method for implementing CDCT in your organisation  
 
 ## Is this method right for your organization?
 This method is a good fit if most of the following apply:
