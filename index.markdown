@@ -15,13 +15,13 @@ This page serves the purpose of helping you determine if the method described in
   style="max-width: 100%; height: auto;"
 />
 
-## Is this method relevant for you?
+<!--## Is this method relevant for you?
 
 - [ ] You want to reduce dependency on expensive testing tools  
 - [ ] You rely heavily on E2E and integration tests  
 - [ ] You face challenges testing through gateways  
 - [ ] You need to test against external provider APIs  
-- [ ] You lack a clear method for implementing CDCT in your organisation  
+- [ ] You lack a clear method for implementing CDCT in your organisation  -->
 
 ## Is this method right for your organization?
 This method is a good fit if most of the following apply:
@@ -38,7 +38,7 @@ If several of these do **not** apply:
 - For non-containerized environments → evaluate standard Pact capabilities first  
 - If resources are limited → avoid introducing a new testing strategy at this time  
 
-
+Additionally, you should have the following prerequisite knowledge to effectively implement this method:
 <details>
 <summary>Prerequisite knowledge</summary>
 
