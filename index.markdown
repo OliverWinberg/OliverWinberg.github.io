@@ -33,13 +33,12 @@ Do you have the following prequisite knowledge? If not, you should properly choo
 <details>
 <summary>Prerequisite knowledge</summary>
 
-- Basic understanding of how APIs communicate (request/response, HTTP methods, payloads)
-
-- Experience with testing APIs
-
-- A development workflow that includes version control and CI/CD
-
-- The ability to run and manage multiple services (e.g., using Docker or similar tools)
+<ul>
+  <li>Basic understanding of how APIs communicate (request/response, HTTP methods, payloads)</li>
+  <li>Experience with testing APIs</li>
+  <li>A development workflow that includes version control and CI/CD</li>
+  <li>The ability to run and manage multiple services (e.g., using Docker or similar tools)</li>
+</ul>
 
 </details>
  
