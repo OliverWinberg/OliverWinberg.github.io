@@ -29,8 +29,8 @@
                 In practice, Consumer-Driven Contract Testing (CDCT) works by defining a contract for each interaction between two microservices.
                 A typical interaction is an API call where one service (the consumer) requests data from another service (the provider).
             </p>
-                The contract is defined by the consumer. It describes how the consumer expects the provider’s API to behave, including the structure of requests and the expected responses.
-                This contract reflects the actual needs of the consumer rather than a general API specification.
+            The contract is defined by the consumer. It describes how the consumer expects the provider’s API to behave, including the structure of requests and the expected responses.
+            This contract reflects the actual needs of the consumer rather than a general API specification.
             <p>
                 Once defined, the contract is shared with the provider.
                 This can be done in different ways, for example through shared files, version control, or other forms of communication between teams.
@@ -76,9 +76,9 @@
                 This removes the need for manual sharing of contracts between teams.
                 The broker stores contracts, service versions, and verification results.
             </p>
-                On the provider side, the contract is retrieved from the broker and used to verify the real implementation. 
-                The provider runs tests against the contract, which defines the requests it must handle and the responses it must return.
-                If the provider behaves as specified, the verification succeeds.
+            On the provider side, the contract is retrieved from the broker and used to verify the real implementation.
+            The provider runs tests against the contract, which defines the requests it must handle and the responses it must return.
+            If the provider behaves as specified, the verification succeeds.
             <p>
                 In this process, mocks are only used to simulate the opposite side of the interaction. The service under test always runs its real implementation.
                 This allows consumer and provider to be tested independently, while still ensuring that they remain compatible.
@@ -86,7 +86,11 @@
 
             <img src="../images/pact.png"
                  alt="Pact diagram"
-                 style="max-width: 50%; height: auto;" />
+                 class="zoomable" />
+
+            <div id="overlay" onclick="closeImage()">
+                <img id="overlay-img">
+            </div>
 
             <ul>
                 <li>Consumer: the service that calls another service</li>
