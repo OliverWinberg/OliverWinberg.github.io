@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CDCT Concept</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="layout">
+
+        <nav class="sidebar">
+            <h2>The Return of the Consumer</h2>
+            <a href="index.html">Welcome</a>
+            <a href="cdct.html" class="active">CDCT Concept</a>
+            <a href="setup.html">Project Setup</a>
+            <a href="contracts.html">Contracts</a>
+            <a href="infrastructure.html">Infrastructure</a>
+            <a href="gateways.html">Gateways</a>
+            <a href="cicd.html">CI/CD</a>
+            <a href="local-tests.html">Local Tests</a>
+            <a href="broker.html">Pact Broker</a>
+            <a href="workflow.html">Team Workflow</a>
+        </nav>
+
+        <main class="content">
+            <h1>Consumer-Driven Contract Testing</h1>
+
+            <p>
+                Consumer-Driven Contract Testing is a testing approach where the consumer defines
+                what it expects from a provider API. The provider then verifies that it can satisfy
+                those expectations.
+            </p>
+
+            <h2>Purpose</h2>
+            <p>
+                The purpose is to verify service compatibility without running the full system.
+            </p>
+
+            <h2>Key concepts</h2>
+            <ul>
+                <li>Consumer: the service that calls another service</li>
+                <li>Provider: the service that exposes an API</li>
+                <li>Contract: the expected request and response between services</li>
+                <li>Verification: checking whether the provider satisfies the contract</li>
+            </ul>
+
+            <h2>When to use it</h2>
+            <p>
+                Use CDCT when services communicate through APIs and compatibility errors are found
+                too late in integration or end-to-end tests.
+            </p>
+        </main>
+
+    </div>
+</body>
+</html>
