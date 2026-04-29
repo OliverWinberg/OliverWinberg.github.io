@@ -15,7 +15,7 @@ title: Welcome to My Data Blog
 
 <iframe src="/assets/maps/sf_heatmap.html" width="100%" height="600"></iframe>
 ---
-#Welcome to The Book of Boba Fett!
+# Welcome to The Book of Boba Fett!
 
 Do you want to save money for choosing a test strategy that requires subscription?
 
@@ -31,23 +31,20 @@ Do you want an easy and proven method for implementing Consumer-driven contract 
 
 Are your company currently using or plan to use microservices architecture? If not, you should stick with traditional monolith tests.
 
-Are you a medium sized or large sized company (50 + employees in IT)? If not, you can must likely implement CDCT following Pact (Introduction | Pact Docs ) without our extension.
+Are you a medium sized or large sized company (50 + employees in IT)? If not, you can must likely implement CDCT following Pact without our extension.
 
-Are you using Docker, Kubernetes or similar in your infrastructure? If not, you should investigate what Pact (Introduction | Pact Docs ) in itself has to offer. 
+Are you using Docker, Kubernetes or similar in your infrastructure? If not, you should investigate what Pact in itself has to offer. 
 
 Do you have the ressources for implementing a new test strategy in your organisation? If not, you can use traditional tests. 
 
 Do you have the following prequisite knowledge? If not, you should properly choose a different test strategy.
 
 
-Prequisite knowledge
+### Prequisite knowledge
 - Basic understanding of how APIs communicate (request/response, HTTP methods, payloads)
 - Experience with testing APIs
 - A development workflow that includes version control and CI/CD
 - The ability to run and manage multiple services (e.g., using Docker or similar tools)
-
-
-
  
 
 ## When should you use this method?
@@ -72,5 +69,5 @@ This method is designed for:
 - Organizations using microservice architectures
 - Teams working on multiple independent services
 - Environments with CI/CD pipelines and API-based communication
-- Smaller teams or simple systems can often adopt CDCT directly using existing tools such as Pact (Introduction | Pact Docs ) without additional structure.
+- Smaller teams or simple systems can often adopt CDCT directly using existing tools such as Pact without additional structure.
 
