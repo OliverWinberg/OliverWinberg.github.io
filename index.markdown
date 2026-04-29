@@ -9,6 +9,12 @@ title: Welcome to The Return of the Consumer.
 This page serves the purpose of helping you determine if the method described in "The Return of the Consumer" is relevant and suitable for your organisation. It provides a checklist to assess relevance, criteria for organisational fit, and guidance on when to use or avoid this method.
 
 
+<img
+  src="images/checklist.png"
+  alt="Checklist for whether the method is relevant"
+  style="max-width: 100%; height: auto;"
+/>
+
 ## Is this method relevant for you?
 
 - [ ] You want to reduce dependency on expensive testing tools  
