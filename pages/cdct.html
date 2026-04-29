@@ -109,3 +109,19 @@
     </div>
 </body>
 </html>
+
+<script>
+    const overlay = document.getElementById('overlay');
+    const overlayImg = document.getElementById('overlay-img');
+
+    document.querySelectorAll('.zoomable').forEach(img => {
+        img.onclick = () => {
+            overlay.style.display = 'flex';
+            overlayImg.src = img.src;
+        };
+    });
+
+    function closeImage() {
+        overlay.style.display = 'none';
+    }
+</script>
