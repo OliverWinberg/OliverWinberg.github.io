@@ -17,7 +17,7 @@ Are you struggling with contract testing against your external provider’s APIs
 
 Do you want an easy and proven method for implementing Consumer-driven contract testing in an organisation?
 
- 
+## Prerequisites
 
 Are your company currently using or plan to use microservices architecture? If not, you should stick with traditional monolith tests.
 
