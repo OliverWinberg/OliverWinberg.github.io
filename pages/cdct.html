@@ -23,20 +23,32 @@
         </nav>
 
         <main class="content">
-            <h1>Consumer-Driven Contract Testing</h1>
+            <h1>Consumer-Driven Contract Testing with Pact</h1>
 
             <p>
-                Consumer-Driven Contract Testing is a testing approach where the consumer defines
-                what it expects from a provider API. The provider then verifies that it can satisfy
-                those expectations.
+                In practice, Consumer-Driven Contract Testing (CDCT) works by defining a contract for each interaction between two microservices. A typical interaction is an API call where one service (the consumer) requests data from another service (the provider).
+                The contract is defined by the consumer. It describes how the consumer expects the provider’s API to behave, including the structure of requests and the expected responses. This contract reflects the actual needs of the consumer rather than a general API specification.
+                Once defined, the contract is shared with the provider. This can be done in different ways, for example through shared files, version control, or other forms of communication between teams. The provider then verifies the contract by testing whether its implementation satisfies the expectations described by the consumer. 
+                For each interaction between a consumer and a provider, there is therefore a contract that defines the expected behaviour. If either the consumer or the provider changes in a way that breaks this contract, the verification will fail. This allows teams to detect compatibility issues early without relying on full end-to-end testing.
             </p>
 
             <h2>Purpose</h2>
             <p>
-                The purpose is to verify service compatibility without running the full system.
+                The purpose is to verify microservice compatibility without running the full system like we do with integration- and E2E-tests.
+            </p>
+
+            <h2>The Pact framework</h2>
+            <p>
+                Pact is an open source, code-first solution with support for a wide array of programming languages. Tests are written in the same language as the application code and typically follow a behavior-driven testing style, similar to frameworks such as Gherkin. A contract is automatically created from the Consumer tests and are encoded in a JSON format, meaning it can be used by a Provider written in any language. Pact supports HTTP and asynchronous message systems. Notably, this omits RPC systems.
+                Pact further includes a so-called Pact Broker. This is a central contract repository that keeps track of Consumer and Provider versions, their contracts, and verification results. It helps teams check whether services are compatible and supports decisions about when it is safe to deploy changes.
             </p>
 
             <h2>Key concepts</h2>
+
+            <img src="images/pact.png"
+                 alt="Pact diagram"
+                 style="max-width: 50%; height: auto;" />
+
             <ul>
                 <li>Consumer: the service that calls another service</li>
                 <li>Provider: the service that exposes an API</li>
