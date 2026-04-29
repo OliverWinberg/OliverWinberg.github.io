@@ -17,17 +17,21 @@ Are you struggling with contract testing against your external provider’s APIs
 
 Do you want an easy and proven method for implementing Consumer-driven contract testing in an organisation?
 
-## Prerequisites
+## Is this method right for your organization?
 
-Are your company currently using or plan to use microservices architecture? If not, you should stick with traditional monolith tests.
+This method is a good fit if most of the following apply:
 
-Are you a medium sized or large sized company (50 + employees in IT)? If not, you can must likely implement CDCT following Pact without our extension.
+- You are using or planning to use a microservices architecture  
+- You are a medium to large organization with multiple teams  
+- You are using container-based infrastructure (e.g., Docker, Kubernetes)  
+- You have the resources to introduce and maintain a new testing strategy  
 
-Are you using Docker, Kubernetes or similar in your infrastructure? If not, you should investigate what Pact in itself has to offer. 
+If several of these do **not** apply:
 
-Do you have the ressources for implementing a new test strategy in your organisation? If not, you can use traditional tests. 
-
-Do you have the following prequisite knowledge? If not, you should properly choose a different test strategy.
+- For monolithic systems → use traditional testing approaches  
+- For small teams or simple systems → use Pact without additional extensions  
+- For non-containerized environments → evaluate standard Pact capabilities first  
+- If resources are limited → avoid introducing a new testing strategy at this time  
 
 
 <details>
@@ -44,7 +48,7 @@ Do you have the following prequisite knowledge? If not, you should properly choo
  
 
 ## When should you use this method?
-- You should consider this method if your organisation experiences one or more of the following:
+You should consider this method if your organisation experiences one or more of the following:
 - You rely heavily on end-to-end or integration tests that are slow, unstable, or difficult to maintain
 - You want faster feedback in your CI/CD pipeline
 - You have multiple services that communicate through APIs and need a reliable way to verify compatibility
@@ -53,7 +57,7 @@ Do you have the following prequisite knowledge? If not, you should properly choo
 - You want a structured and practical approach to adopting Consumer-Driven Contract Testing (CDCT) in an organisation
 
 ## When should you NOT use this method?
-- This method is not suitable in the following cases:
+This method is not suitable in the following cases:
 - Your system is a monolith with limited or no service-to-service communication
 - Your system has very few services and low integration complexity
 - Your current testing setup is fast, stable, and provides sufficient feedback
