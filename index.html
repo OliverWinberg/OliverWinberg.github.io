@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome to The Return of the Consumer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>The Return of the Consumer</h2>
+
+        <a href="index.html" class="active">Welcome</a>
+        <a href="setup.html">Setup</a>
+        <a href="contracts.html">Contracts</a>
+        <a href="gateways.html">Gateways</a>
+        <a href="external-apis.html">External APIs</a>
+    </nav>
+
+    <main class="content">
+        <h1>Welcome to The Return of the Consumer</h1>
+
+        <p>
+            This page serves the purpose of helping you determine if the method described in
+            <strong>The Return of the Consumer</strong> is relevant and suitable for your organisation.
+            It provides a checklist to assess relevance, criteria for organisational fit, and
+            guidance on when to use or avoid this method.
+        </p>
+
+        <img src="images/checklist.png"
+             alt="Checklist for whether the method is relevant"
+             style="max-width: 100%; height: auto;" />
+
+        <h2>Is this method right for your organization?</h2>
+
+        <p>This method is a good fit if most of the following apply:</p>
+
+        <ul>
+            <li>You are using or planning to use a microservices architecture</li>
+            <li>You are a medium to large organization with multiple teams</li>
+            <li>You are using container-based infrastructure, for example Docker or Kubernetes</li>
+            <li>You have the resources to introduce and maintain a new testing strategy</li>
+        </ul>
+
+        <p>If several of these do <strong>not</strong> apply:</p>
+
+        <ul>
+            <li>For monolithic systems, use traditional testing approaches</li>
+            <li>For small teams or simple systems, use Pact without additional extensions</li>
+            <li>For non-containerized environments, evaluate standard Pact capabilities first</li>
+            <li>If resources are limited, avoid introducing a new testing strategy at this time</li>
+        </ul>
+
+        <p>
+            Additionally, you should have the following prerequisite knowledge to effectively
+            implement this method:
+        </p>
+
+        <details>
+            <summary>Prerequisite knowledge</summary>
+
+            <ul>
+                <li>Basic understanding of how APIs communicate, including request/response, HTTP methods, and payloads</li>
+                <li>Experience with testing APIs</li>
+                <li>A development workflow that includes version control and CI/CD</li>
+                <li>The ability to run and manage multiple services, for example using Docker or similar tools</li>
+            </ul>
+        </details>
+
+        <h2>When should you use this method?</h2>
+
+        <p>You should consider this method if your organisation experiences one or more of the following:</p>
+
+        <ul>
+            <li>You rely heavily on end-to-end or integration tests that are slow, unstable, or difficult to maintain</li>
+            <li>You want faster feedback in your CI/CD pipeline</li>
+            <li>You have multiple services that communicate through APIs and need a reliable way to verify compatibility</li>
+            <li>You find it difficult to manage contracts across API gateways or between frontend, gateway, and backend services</li>
+            <li>You depend on external APIs and want a safer way to validate integrations without relying on full system tests</li>
+            <li>You want a structured and practical approach to adopting Consumer-Driven Contract Testing (CDCT) in an organisation</li>
+        </ul>
+
+        <h2>When should you NOT use this method?</h2>
+
+        <p>This method is not suitable in the following cases:</p>
+
+        <ul>
+            <li>Your system is a monolith with limited or no service-to-service communication</li>
+            <li>Your system has very few services and low integration complexity</li>
+            <li>Your current testing setup is fast, stable, and provides sufficient feedback</li>
+            <li>You do not have the resources to introduce and maintain a new testing approach</li>
+        </ul>
+
+        <h2>What type of organisation is this for?</h2>
+
+        <p>This method is designed for:</p>
+
+        <ul>
+            <li>Organisations using microservice architectures</li>
+            <li>Teams working on multiple independent services</li>
+            <li>Environments with CI/CD pipelines and API-based communication</li>
+        </ul>
+
+        <p>
+            Smaller teams or simple systems can often adopt CDCT directly using existing tools
+            such as Pact without additional structure.
+        </p>
+    </main>
+
+</body>
+</html>
