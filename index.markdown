@@ -18,7 +18,6 @@ Are you struggling with contract testing against your external provider’s APIs
 Do you want an easy and proven method for implementing Consumer-driven contract testing in an organisation?
 
 ## Is this method right for your organization?
-
 This method is a good fit if most of the following apply:
 
 - You are using or planning to use a microservices architecture  
@@ -64,9 +63,9 @@ This method is not suitable in the following cases:
 - You do not have the resources to introduce and maintain a new testing approach
 
 
-## What type of organization is this for?
+## What type of organisation is this for?
 This method is designed for:
-- Organizations using microservice architectures
+- Organisations using microservice architectures
 - Teams working on multiple independent services
 - Environments with CI/CD pipelines and API-based communication
 - Smaller teams or simple systems can often adopt CDCT directly using existing tools such as Pact without additional structure.
