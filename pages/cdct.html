@@ -30,14 +30,6 @@
                 A typical interaction is an API call where one service (the consumer) requests data from another service (the provider).
             </p>
 
-            <img src="../images/testpyramid.png"
-                 alt="Test pyramid"
-                 class="zoomable" />
-
-            <div id="overlay" onclick="closeImage()">
-                <img id="overlay-img" alt="Expanded diagram">
-            </div>
-
             <p>
                 The contract is defined by the consumer. It describes how the consumer expects the provider’s API to behave, including the structure of requests and the expected responses.
                 This contract reflects the actual needs of the consumer rather than a general API specification.
@@ -57,6 +49,22 @@
             <h2>Purpose</h2>
             <p>
                 The purpose is to verify microservice compatibility without running the full system like we do with integration- and E2E-tests.
+            </p>
+
+            <img src="../images/testpyramid.png"
+                 alt="Test pyramid"
+                 class="zoomable" />
+
+            <div id="overlay" onclick="closeImage()">
+                <img id="overlay-img" alt="Expanded diagram">
+            </div>
+
+            <p>
+                In the test pyramid, Consumer-Driven Contract Testing is typically positioned above integration and component tests, but below end-to-end tests.
+                Unit tests verify individual classes or functions in isolation, while integration tests verify that multiple components or systems can work together correctly.
+                Component or service tests validate the behavior of an entire service in isolation from the rest of the system.
+                Contract tests focus specifically on the communication boundary between services by verifying that requests and responses match the agreed contract.
+                Because contract tests avoid running the full distributed system, they are generally faster, more stable, and easier to maintain than end-to-end tests, while still providing confidence that services remain compatible.
             </p>
 
             <h2>The Pact framework</h2>
