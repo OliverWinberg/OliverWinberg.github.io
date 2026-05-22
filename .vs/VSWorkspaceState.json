@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\pages"
   ],
-  "SelectedNode": "\\index.markdown",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

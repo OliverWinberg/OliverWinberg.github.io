@@ -3,10 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Welcome to The Return of the Consumer.
+title: Welcome to Consumer Driven Contract Testing - A CDCT method.
 
 ---
-This page serves the purpose of helping you determine if the method described in "The Return of the Consumer" is relevant and suitable for your organisation. It provides a checklist to assess relevance, criteria for organisational fit, and guidance on when to use or avoid this method.
+This page serves the purpose of helping you determine if the method described in "Consumer Driven Contract Testing - A CDCT method" is relevant and suitable for your organisation. It provides a checklist to assess relevance, criteria for organisational fit, and guidance on when to use or avoid this method.
 
 
 <img
